@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h1 {
+  @apply text-2xl font-bold ;
+}
+h2 {
+  @apply text-xl font-bold my-4;
+}
+h3 {
+  @apply text-lg font-bold my-4;
+}
+ul {
+  @apply my-10;
+}
+p {
+  @apply my-2;
+}
+body{
+    
+    font-family: 'Roboto Mono';
+    
+}
+.sidebar{
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.sidebar ul li {
+  @apply rounded p-[10px] mb-[10px] hover:bg-blue-500 hover:text-white ;
+}
+.card {
+  @apply bg-white rounded border border-gray-200 px-3 py-3 my-2 flex justify-between items-center;
+}
+.btn {
+  @apply rounded px-3 py-2 bg-gray-200 hover:bg-blue-500 hover:text-white;
+}
+.books-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 columns per row */
+      gap: 20px;
+}
+.book {
+      /* width: 50%; */
+      margin-bottom: 40px;
+      aspect-ratio: 2/3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      padding: 50px;
+}
+.inputbox{
+  @apply border border-black h-10 rounded p-[5px] w-full;
+}
+.dash-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 5 columns per row */
+      gap: 20px;
+}
